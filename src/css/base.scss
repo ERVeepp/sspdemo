@@ -1,0 +1,149 @@
+$tablecolor: #ccc;
+.base{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  }
+*{
+  box-sizing: border-box;
+}
+html{
+  @extend .base;
+  font-size: 12px;
+  body{
+    @extend .base;
+    font-size: 1rem;
+    font-family: sans-serif, 'Avenir', Helvetica, Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    #app{
+      @extend .base;
+    }
+  }
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+.color_a{
+  color: #1a8eff;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.mt38{
+  margin-top: 38px;
+}
+.pt38{
+  padding-top: 38px;
+}
+.h40{
+  height: 40px;
+}
+ul,li,h1,h2,h3,h4,h5{
+  @extend .base;
+}
+li{
+  list-style: none;
+}
+$color: #f3f3f3;
+table{
+  table-layout: auto !important;
+}
+.border{
+  border-top: 1px solid $color;
+  border-left: 1px solid $color;
+  th,td{
+    padding: 12px 0;
+    border-bottom: 1px solid $color;
+    border-right: 1px solid $color;
+    border-collapse: collapse;
+    text-align: center;
+  }
+}
+.center{
+  th{
+    text-align: center;
+  }
+}
+.setting-element-table{
+  thead{
+    color: #303133;
+    th{
+      font-weight: bold;
+      background: #F0F2F8;
+    }
+  }
+  .el-table{
+    color: #303133;
+    tr:nth-child(2n) {
+      background-color: #f3f8fd;
+    }
+  }
+  *{
+    border-color: #ddd !important;
+  }
+}
+.table{
+  border-top: 1px solid $color;
+  a{
+    font-weight: bold;
+  }
+  .img-box{
+    width: 1.6rem;
+  }
+}
+.table-thead{
+  font-weight: bold;
+  border-left: 1px solid $color;
+}
+.table-th{
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid $color;
+  border-right: 1px solid $color;
+}
+.table-tbody{
+  border-left: 1px solid $color;
+}
+.table-tr{
+
+}
+.table-td{
+  text-align: center;
+  height: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid $color;
+  border-right: 1px solid $color;
+}
+.form-grid{
+  display: grid;
+  grid-template-columns: 200px auto;
+  margin-bottom: 20px;
+  .form-left{
+    padding-right: 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .from-right{
+
+  }
+  .form-input{
+    width: 300px;
+  }
+}
+.steps-box{
+  margin-bottom: 38px;
+}
+.tab-box{
+  margin-bottom: 38px;
+}
