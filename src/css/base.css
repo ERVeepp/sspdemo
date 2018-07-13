@@ -14,7 +14,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -138,8 +139,10 @@ table {
 }
 
 .form-grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 200px auto;
+  -ms-grid-columns: 200px auto;
+      grid-template-columns: 200px auto;
   margin-bottom: 20px;
 }
 
